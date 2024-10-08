@@ -1,4 +1,4 @@
-# Doctor Hose Call - 재택진료 서비스
+# Side project front init
 
 ## Project Setup
 
