@@ -1,0 +1,313 @@
+/* Elevation(box-shadow) */
+@mixin elevation-1( $shadow: 0px 1px 4px rgba(0, 0, 0, 0.16) ) {
+  box-shadow: $shadow;
+}
+
+@mixin elevation-2( $shadow: 0px 2px 8px rgba(0, 0, 0, 0.2) ) {
+  box-shadow: $shadow;
+}
+
+@mixin elevation-3( $shadow: 0px 4px 16px rgba(0, 0, 0, 0.25) ) {
+  box-shadow: $shadow;
+}
+
+@mixin elevation-4( $shadow: 0px 8px 32px rgba(0, 0, 0, 0.31) ) {
+  box-shadow: $shadow;
+}
+
+
+/* Headline */
+@mixin h0-title( $size: 3rem,
+                  $weight: 700,
+                  $line-height: 4rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+
+@mixin h1-title( $size: 2.4rem,
+                  $weight: 700,
+                  $line-height: 3.4rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin h2-title( $size: 2.2rem,
+                  $weight: 700,
+                  $line-height: 3.2rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin h3-title( $size: 2rem,
+                  $weight: 400,
+                  $line-height: 2.8rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin h4-title( $size: 2rem,
+                  $weight: 700,
+                  $line-height: 2.8rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin h5-title( $size: 1.8rem,
+                  $weight: 700,
+                  $line-height: 2.8rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin h6-title( $size: 1.7rem,
+                  $weight: 700,
+                  $line-height: 2.6rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin h7-title( $size: 1.7rem,
+                  $weight: 500,
+                  $line-height: 2.6rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin sub-title-1( $size: 1.6rem,
+                     $weight: 500,
+                     $line-height: 2.4rem,
+                     $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin sub-title-2( $size: 1.4rem,
+                     $weight: 700,
+                     $line-height: 2.2rem,
+                     $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+
+/* Content */
+@mixin body-1( $size: 1.8rem,
+                $weight: 400,
+                $line-height: 2.8rem,
+                $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin body-2( $size: 1.6rem,
+                $weight: 400,
+                $line-height: 2.4rem,
+                $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin body-3( $size: 1.4rem,
+                $weight: 400,
+                $line-height: 2.2rem,
+                $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin body-4( $size: 1.3rem,
+                $weight: 400,
+                $line-height: 2rem,
+                $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+
+// TODO:
+/* == Button == */
+/* Button-Size */
+@mixin button-md( $minwidth: 64px,
+                   $height: 40px,
+                   $padding: 0 16px,
+                   $radius: 8px ) {
+  min-width: $minwidth;
+  height: $height;
+  padding: $padding;
+  border-radius: $radius;
+}
+
+@mixin button-sm( $minwidth: 56px,
+                   $height: 36px,
+                   $padding: 0 16px,
+                   $radius: 6px ) {
+  min-width: $minwidth;
+  height: $height;
+  padding: $padding;
+  border-radius: $radius;
+}
+
+@mixin button-xs( $minwidth: 48px,
+                   $height: 32px,
+                   $padding: 0 12px,
+                   $radius: 6px ) {
+  min-width: $minwidth;
+  height: $height;
+  padding: $padding;
+  border-radius: $radius;
+}
+
+@mixin button-xxs( $minwidth: 42px,
+                    $height: 28px,
+                    $padding: 0 8px,
+                    $radius: 4px ) {
+  min-width: $minwidth;
+  height: $height;
+  padding: $padding;
+  border-radius: $radius;
+}
+
+/* Button-Text */
+@mixin button-1( $size: 1.8rem,
+                  $weight: 500,
+                  $line-height: 2.2rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin button-2( $size: 1.6rem,
+                  $weight: 500,
+                  $line-height: 2rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin button-3( $size: 1.4rem,
+                  $weight: 500,
+                  $line-height: 1.8rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin button-4( $size: 1.2rem,
+                  $weight: 500,
+                  $line-height: 1.6rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin button-5( $size: 1.1rem,
+                  $weight: 500,
+                  $line-height: 1.4rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+//TODO:
+@mixin button-6( $size: 0.8125rem,
+                  $weight: 500,
+                  $line-height: 1.4rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+/* Caption */
+@mixin caption-1( $size: 1.3rem,
+                  $weight: 400,
+                  $line-height: 2rem,
+                  $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin caption-2( $size: 1.2rem,
+                   $weight: 400,
+                   $line-height: 1.8rem,
+                   $color: $gray-900 ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+/* text Ellipsis(...처리) */
+@mixin textOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 여러줄 처리시
+@mixin textLineEllipsis( $line-num: 2 ) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  word-break: break-all;
+  display: -webkit-box !important;
+  -webkit-line-clamp: $line-num;
+  -webkit-box-orient: vertical;
+}
+
+/* 드래그 방지 */
+@mixin notDrag {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
