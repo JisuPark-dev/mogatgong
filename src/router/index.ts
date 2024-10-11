@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import NotFound from "@/views/NotFound.vue";
-import Login from "@/views/Login.vue";
-import Test from "@/views/test/Test.vue";
+import Login from "@/views/login/Login.vue";
+import Home from '@/views/Home.vue'
+import AssignmentHome from '@/views/assignment/AssignmentHome.vue'
+import AssignmentDetail from '@/views/assignment/AssignmentDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,12 +15,18 @@ const router = createRouter({
     },
     {
       path: '/',
-      redirect: '/management/patients'
+      name: 'home',
+      component: Home
     },
     {
-      path: '/test',
-      name: 'test',
-      component: Test,
+      path: '/assignment',
+      name: 'assignment',
+      component: AssignmentHome,
+    },
+    {
+      path: '/assignment/:seq',
+      name: 'assignmentDetail',
+      component: AssignmentDetail,
     },
     { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound }
   ]

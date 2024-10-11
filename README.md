@@ -1,4 +1,4 @@
-# Side project front init
+# 모같공 사이드 프로젝트
 
 ## Project Setup
 

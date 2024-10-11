@@ -18,8 +18,7 @@
 import InlineSvg from 'vue-inline-svg';
 import {onMounted, ref, watch} from "vue";
 import {refs} from "@/utils/refs";
-import {styleLoader} from "@/utils/assetLoader";
-import {$config} from "@/plugins/config";
+import {commonSvgLoader, styleLoader} from "@/utils/assetLoader";
 
 const props = withDefaults(defineProps<{
   icon?: string
@@ -80,10 +79,15 @@ async function svgLoaded(e: any) {
 }
 
 async function svgIconLoaded(icon:string) {
+  console.log("hi")
   try {
-    src.value = `/upload/asset/icon/pc/${icon}.svg`; // object Storage에 있습니다.
+    const path = `../assets/img/${icon}.svg`
+    const svg: any = await commonSvgLoader.get(path)
+    if(svg && svg.default) {
+      src.value = svg.default;
+    }
   } catch (e) {
-    console.error(e);
+    console.log(e); // todo. 나중에 CDN으로 개선 예정
   }
 }
 
